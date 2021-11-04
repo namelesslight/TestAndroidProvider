@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
                     Log.d("MainActivity","book price is"+price);
                 };
             }
+            System.out.println(11);
             cursor.close();
         });
     }
