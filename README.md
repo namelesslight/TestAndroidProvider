@@ -6,7 +6,7 @@
 >
 > [android studio下载地址]([Download Android Studio and SDK tools  | Android Developers (google.cn)](https://developer.android.google.cn/studio))
 >
-> 要在本地Android虚拟机上安装https://github.com/namelesslight/AndroidSQLite 项目
+> 要在本地Android虚拟机上使用https://github.com/namelesslight/AndroidSQLite 项目并在虚拟机上建立sqlite数据库
 
 ## 项目的创建
 
