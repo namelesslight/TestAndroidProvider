@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     Button updateBtn;
     Button queryBtn;
     Button deleteBtn;
-    //此处为来自其他应用的url
+    //此处为访问AndroidSQLite项目的url
     private final String AUTH="content://com.example.androidsqlite.provider/book";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
