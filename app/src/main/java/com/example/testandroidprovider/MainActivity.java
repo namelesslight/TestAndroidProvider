@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
+        //插入新的记录
         insertBtn.setOnClickListener(view -> {
             Uri uri=Uri.parse(AUTH);
             ContentValues values=new ContentValues();
