@@ -27,19 +27,20 @@ public class MainActivity extends AppCompatActivity {
         queryBtn.setOnClickListener(view -> {
             Uri uri=Uri.parse(AUTH);
             Cursor cursor=getContentResolver().query(uri,null,null,null,null);
-            if (cursor.moveToFirst()){
-                while (cursor.moveToNext()){
-                    @SuppressLint("Range") String name =cursor.getString(cursor.getColumnIndex("name"));
-                    @SuppressLint("Range") String author =cursor.getString(cursor.getColumnIndex("author"));
-                    @SuppressLint("Range") int pages =cursor.getInt(cursor.getColumnIndex("pages"));
-                    @SuppressLint("Range") double price =cursor.getDouble(cursor.getColumnIndex("price"));
-                    Log.d("MainActivity","book name is"+name);
-                    Log.d("MainActivity","book author is"+author);
-                    Log.d("MainActivity","book pages is"+pages);
-                    Log.d("MainActivity","book price is"+price);
-                };
+            if(cursor!=null){
+                if (cursor.moveToFirst()){
+                    while (cursor.moveToNext()){
+                        @SuppressLint("Range") String name =cursor.getString(cursor.getColumnIndex("name"));
+                        @SuppressLint("Range") String author =cursor.getString(cursor.getColumnIndex("author"));
+                        @SuppressLint("Range") int pages =cursor.getInt(cursor.getColumnIndex("pages"));
+                        @SuppressLint("Range") double price =cursor.getDouble(cursor.getColumnIndex("price"));
+                        Log.d("MainActivity","book name is"+name);
+                        Log.d("MainActivity","book author is"+author);
+                        Log.d("MainActivity","book pages is"+pages);
+                        Log.d("MainActivity","book price is"+price);
+                    };
+                }
             }
-            System.out.println(11);
             cursor.close();
         });
     }
