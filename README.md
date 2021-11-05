@@ -194,3 +194,4 @@ public class MainActivity extends AppCompatActivity {
 
 </manifest>
 ```
+之后就可以测试数据的共享了
